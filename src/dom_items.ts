@@ -1,0 +1,1 @@
+export const canvas = document.querySelector('#render_canvas') as HTMLCanvasElement

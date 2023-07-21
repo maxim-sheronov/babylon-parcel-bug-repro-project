@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html -p 8000",
+    "build": "parcel build src/index.html",
+    "build-prod": "parcel build --no-source-maps --public-url ./ src/index.html && npm-build-zip --source dist",
+    "clear": "rimraf ./.parcel-cache ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babylonjs/core": "^6.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "npm-build-zip": "^1.0.4",
+    "parcel": "^2.9.3",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}
